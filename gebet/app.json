@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Gebet",
+    "slug": "gebet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF7F2"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "de.gebet.app",
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "Gebet erinnert dich täglich an deine Gebetszeit."
+      }
+    },
+    "android": {
+      "package": "de.gebet.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAF7F2"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": ["RECEIVE_BOOT_COMPLETED", "SCHEDULE_EXACT_ALARM"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-font",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "color": "#C97D5B"
+        }
+      ]
+    ]
+  }
+}
